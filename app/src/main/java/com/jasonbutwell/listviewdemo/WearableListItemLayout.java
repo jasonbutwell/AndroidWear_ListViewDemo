@@ -1,3 +1,5 @@
+package com.jasonbutwell.listviewdemo;
+
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
 import android.support.wearable.view.WearableListView;
@@ -5,12 +7,6 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.jasonbutwell.androidwear_listviewdemo.R;
-
-/**
- * Created by J on 19/10/2016.
- */
 
 public class WearableListItemLayout extends LinearLayout
         implements WearableListView.OnCenterProximityListener {
@@ -34,8 +30,8 @@ public class WearableListItemLayout extends LinearLayout
                                   int defStyle) {
         super(context, attrs, defStyle);
 
-        mFadedTextAlpha = getResources()
-                .getInteger(R.integer.action_text_faded_alpha) / 100f;
+        mFadedTextAlpha = 0.8f / 100f;
+
         mFadedCircleColor = getResources().getColor(R.color.grey);
         mChosenCircleColor = getResources().getColor(R.color.blue);
     }

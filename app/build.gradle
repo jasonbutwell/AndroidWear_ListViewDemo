@@ -4,7 +4,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion "23.0.2"
     defaultConfig {
-        applicationId "com.jasonbutwell.androidwear_listviewdemo"
+        applicationId "com.jasonbutwell.listviewdemo"
         minSdkVersion 20
         targetSdkVersion 24
         versionCode 1
